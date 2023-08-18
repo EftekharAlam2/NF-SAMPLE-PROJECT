@@ -24,11 +24,11 @@ $primary-color: rgb(224, 134, 81);
   display: grid;
   grid-template-columns: 20% 60% 20%;
 }
-
 .navbar .nav-start img {
   width: 30%;
   padding: 2vh 3vh;
 }
+
 .navbar .nav-middle {
   display: grid;
   grid-template-areas:
@@ -49,7 +49,7 @@ $primary-color: rgb(224, 134, 81);
   width: 80%;
   padding-left: 15vh;
 }
-.navbar .nav-middle .nav-middle-bottom .custom-button {
+.custom-button {
   background-color: black;
   color: white;
   border: none;
@@ -80,6 +80,39 @@ $primary-color: rgb(224, 134, 81);
   gap: 1vh;
   height: 50%;
   padding: 20vh auto;
+}
+.search-field {
+  display: none;
+}
+.search-field.visible {
+  border: 0;
+  height: 6vh;
+  width: 88vh;
+  display: block;
+  border-radius: 2%;
+}
+.search-button.hidden {
+  display: none;
+}
+.custom-button.hidden {
+  display: none;
+}
+.cross-button {
+  display: none;
+}
+.cross-button.visible {
+  background-color: black;
+  width: 5%;
+  border: none;
+  display: flex;
+  align-items: center;
+  height: 50%;
+  padding: 20vh auto;
+  margin-top: 1.5vh;
+}
+.icon4 {
+  width: 100%;
+  color: white;
 }
 
 .navbar .nav-end {
