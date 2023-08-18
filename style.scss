@@ -1,13 +1,11 @@
-$white: white;
-$red: red;
-$yellow: rgb(224, 134, 81);
+$primary-color: rgb(224, 134, 81);
 
 * {
   margin: 0;
   padding: 0;
 }
 
-.header {
+.banner {
   background: url(images/banner.jpg);
   height: 100vh;
   background-size: cover;
@@ -15,9 +13,55 @@ $yellow: rgb(224, 134, 81);
   overflow: hidden;
   position: relative;
 }
-.header .waves {
+.banner .waves {
   position: absolute;
   bottom: 0;
   width: 100%;
   left: 0;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+.navbar .nav-start img {
+  background-color: gray;
+  width: 30%;
+  padding: 2vh 3vh;
+}
+.navbar .nav-middle {
+  background-color: red;
+  display: grid;
+  grid-template-areas:
+    "nav-middle-top"
+    "nav-middle-bottom";
+}
+.navbar .nav-middle .nav-middle-top {
+  display: flex;
+  gap: 5vh;
+  margin: auto;
+}
+.navbar .nav-middle .nav-middle-top p {
+  color: white;
+  font-size: 3vh;
+}
+.navbar .nav-middle .nav-middle-bottom {
+  display: flex;
+}
+.navbar .nav-middle .nav-middle-bottom .custom-button {
+  background-color: black;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+}
+.icon {
+  width: 5%;
+  color: white;
+}
+
+.navbar .nav-end {
+  background-color: green;
 }
