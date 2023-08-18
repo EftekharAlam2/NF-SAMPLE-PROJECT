@@ -132,3 +132,52 @@ $primary-color: rgb(224, 134, 81);
   padding: 1.5vh;
   border-radius: 25%;
 }
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .navbar .nav-start img {
+    width: 100%;
+    padding: 2vh 2vh;
+  }
+  .navbar {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+  }
+  .navbar .nav-middle .nav-middle-top {
+    gap: 1vh;
+  }
+  .navbar .nav-middle .nav-middle-top p {
+    font-size: 1.5vh;
+  }
+  .navbar .nav-middle .nav-middle-bottom {
+    width: 80%;
+    padding-left: 7vh;
+  }
+  .icon {
+    width: 15%;
+  }
+  .search-icon {
+    width: 2vh;
+    padding: 2vh;
+  }
+
+  .search-field.visible {
+    height: 3vh;
+    width: 42vh;
+  }
+  .cross-button.visible {
+    width: 8%;
+    height: 50%;
+    margin-top: 5px;
+  }
+  .icon4 {
+    width: 100%;
+  }
+
+  .navbar .nav-end {
+    padding-left: 1vh;
+    gap: 1vh;
+  }
+  .icon3 {
+    padding: 1vh;
+  }
+}
