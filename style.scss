@@ -170,14 +170,16 @@ $primary-color: rgb(224, 134, 81);
   background: linear-gradient(to top right, rgb(68, 67, 67), rgb(173, 89, 40));
   margin: 2vh auto;
   width: 70vh;
-  height: 40vh;
+  height: 45vh;
   border-radius: 1vh;
+  z-index: 2;
 }
 .nav-middle-last-Input {
   margin: 2vh;
 }
 .child-form {
   position: relative;
+  margin-top: 2vh;
 }
 .child-form input {
   background: linear-gradient(
@@ -228,7 +230,26 @@ $primary-color: rgb(224, 134, 81);
   color: white;
   font-size: 2vh;
 }
-
+.space:hover {
+  background-color: rgb(128, 122, 122);
+  border-radius: 1vh;
+}
+.child-form-last {
+  margin-top: 2vh;
+  display: flex;
+  gap: 6vh;
+  align-items: center;
+  margin-left: 4vh;
+}
+.child-form-last img {
+  width: 8vh;
+  border-radius: 10%;
+  margin: auto 1.5vh;
+}
+.child-form-last p {
+  color: white;
+  font-size: 2.1vh;
+}
 // Banner text
 
 .banner .banner-text {
