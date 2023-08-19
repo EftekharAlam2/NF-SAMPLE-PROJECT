@@ -154,11 +154,11 @@ $primary-color: rgb(224, 134, 81);
   top: 2vh;
 }
 .icon2 {
-  width: 4vh;
+  width: 3.5vh;
   color: white;
 }
 .icon3 {
-  width: 4vh;
+  width: 3.5vh;
   color: rgb(55, 55, 216);
   background-color: rgb(121, 117, 117);
   padding: 1.5vh;
@@ -167,10 +167,46 @@ $primary-color: rgb(224, 134, 81);
 
 // child menu bar
 .nav-middle-last {
-  background-color: aqua;
-  margin-top: 2vh;
+  background: linear-gradient(to top right, rgb(68, 67, 67), rgb(173, 89, 40));
+  margin: 2vh auto;
   width: 70vh;
-  height: 20vh;
+  height: 40vh;
+  border-radius: 1vh;
+}
+.nav-middle-last-Input {
+  margin: 2vh;
+}
+.child-form {
+  position: relative;
+}
+.child-form input {
+  background: linear-gradient(
+    to top right,
+    rgb(39, 39, 48),
+    rgb(145, 145, 148)
+  );
+  border-radius: 4vh;
+  height: 4vh;
+  width: 65vh;
+  display: block;
+  font-size: 15px;
+  border: none;
+}
+.child-form input:focus {
+  outline: none;
+}
+.child-form input::placeholder {
+  color: white;
+}
+.child-form p {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10vh;
+  cursor: pointer;
+  margin: 1vh auto;
+  font-size: 1.8vh;
 }
 
 // Banner text
