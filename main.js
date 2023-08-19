@@ -2,7 +2,7 @@ import "./style.scss";
 document.addEventListener("DOMContentLoaded", function () {
   const searchButton = document.getElementById("searchButton");
   const crossButton = document.getElementById("crossButton");
-  const searchField = document.getElementById("searchField");
+  const searchField = document.getElementById("form1");
   const customButtons = document.querySelectorAll(".custom-button");
 
   searchButton.addEventListener("click", function () {
