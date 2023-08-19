@@ -162,6 +162,52 @@ $primary-color: rgb(224, 134, 81);
   border-radius: 25%;
 }
 
+// Banner text
+
+.banner .banner-text {
+  width: 60vh;
+  height: 25vh;
+  background-color: aqua;
+  position: absolute;
+  top: 30vh;
+  left: 20vh;
+}
+
+.banner-text button {
+  border-radius: 5px;
+  padding: 5px 1vh;
+  color: white;
+  background-color: rgb(146, 141, 141);
+  margin-bottom: 1.5vh;
+  font-size: 2vh;
+}
+.banner-text h1 {
+  color: white;
+  margin-bottom: 2vh;
+  font-size: 5vh;
+}
+.banner-text .primary-btn {
+  width: 5vh;
+  background-color: $primary-color;
+  color: white;
+  font-size: 2vh;
+  // padding: 12px 1.5vh;
+  padding: 1.2vh 6px 1.2vh 1.5vh;
+  border-radius: 5px;
+  position: relative;
+}
+.banner-text .primary-btn:before {
+  border-radius: 5px;
+  position: absolute;
+  content: "";
+  width: 2vh;
+  height: 100%;
+  top: 0;
+  right: -9px;
+  background-color: $primary-color;
+  transform: skewX(16deg);
+}
+
 @media screen and (min-width: 576px) and (max-width: 912px) {
   .navbar .nav-start img {
     width: 100%;
@@ -219,6 +265,12 @@ $primary-color: rgb(224, 134, 81);
   .icon3 {
     width: 1.5vh;
     padding: 5px;
+  }
+
+  // banner text
+  .banner .banner-text {
+    top: 35vh;
+    left: 6vh;
   }
 }
 
@@ -284,5 +336,13 @@ $primary-color: rgb(224, 134, 81);
     width: 45%;
     padding: 2px;
     border-radius: 25%;
+  }
+
+  // banner text
+  .banner .banner-text {
+    width: 30vh;
+    height: 40vh;
+    top: 20vh;
+    left: 2vh;
   }
 }
