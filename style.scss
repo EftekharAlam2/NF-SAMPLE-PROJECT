@@ -238,33 +238,43 @@ $primary-color: rgb(224, 134, 81);
   .navbar .nav-middle .nav-middle-top p {
     font-size: 1vh;
   }
-  // .navbar .nav-middle .nav-middle-bottom {
-  //   padding-left: 2vh;
-  // }
-  // .custom-button {
-  //   padding: 5vh auto;
-  //   font-size: 7px;
-  // }
-  // .icon {
-  //   width: 1vh;
-  // }
-  // .search-icon {
-  //   width: 1vh;
-  //   padding: 10px;
-  // }
-  // .search-field.visible {
-  //   height: 2vh;
-  //   width: 37vh;
-  //   font-size: 8px;
-  // }
-  // .cross-button.visible {
-  //   width: 3vh;
-  //   height: 50%;
-  //   margin-top: 3px;
-  // }
+  .navbar .nav-middle .nav-middle-bottom {
+    height: 3.2vh;
+    width: 32vh;
+    gap: 1px;
+  }
+  .custom-button {
+    font-size: 7px;
+    gap: 2px;
+  }
+  .icon {
+    width: 1vh;
+  }
+  .search-icon {
+    width: 1.5vh;
+    padding: 1vh;
+  }
+  .form input {
+    height: 3.2vh;
+    width: 32vh;
+    font-size: 7px;
+  }
+
+  .form p {
+    width: 8vh;
+    margin: 1vh auto;
+    font-size: 1vh;
+  }
+  .cross-button.visible {
+    margin-left: 1px;
+  }
+  .icon4 {
+    width: 2vh;
+    color: white;
+  }
 
   .navbar .nav-end {
-    padding-left: 2px;
+    padding-left: 1px;
     gap: 5px;
   }
   .icon2 {
