@@ -17,4 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
     crossButton.classList.toggle("visible");
     customButtons.forEach((button) => button.classList.toggle("hidden"));
   });
+
+  const menuField = document.getElementById("childMenu");
+
+  customButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      menuField.classList.toggle("visible");
+    });
+  });
 });
