@@ -167,7 +167,6 @@ $primary-color: rgb(224, 134, 81);
 .banner .banner-text {
   width: 60vh;
   height: 25vh;
-  background-color: aqua;
   position: absolute;
   top: 30vh;
   left: 20vh;
@@ -186,14 +185,21 @@ $primary-color: rgb(224, 134, 81);
   margin-bottom: 2vh;
   font-size: 5vh;
 }
+.banner-text-flex {
+  display: flex;
+  gap: 3vh;
+}
+.banner-text-flex .text-bigger {
+  font-size: 4vh;
+  color: white;
+}
 .banner-text .primary-btn {
   width: 5vh;
   background-color: $primary-color;
   color: white;
   font-size: 2vh;
-  // padding: 12px 1.5vh;
-  padding: 1.2vh 6px 1.2vh 1.5vh;
-  border-radius: 5px;
+  padding: 1.2vh 3px 1.2vh 1.5vh;
+  border-radius: 1px;
   position: relative;
 }
 .banner-text .primary-btn:before {
@@ -340,7 +346,7 @@ $primary-color: rgb(224, 134, 81);
 
   // banner text
   .banner .banner-text {
-    width: 30vh;
+    width: 40vh;
     height: 40vh;
     top: 20vh;
     left: 2vh;
