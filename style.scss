@@ -185,7 +185,7 @@ $primary-color: rgb(224, 134, 81);
     rgb(39, 39, 48),
     rgb(145, 145, 148)
   );
-  border-radius: 4vh;
+  border-radius: 1vh;
   height: 4vh;
   width: 65vh;
   display: block;
@@ -207,6 +207,26 @@ $primary-color: rgb(224, 134, 81);
   cursor: pointer;
   margin: 1vh auto;
   font-size: 1.8vh;
+}
+
+.child-form-second {
+  display: grid;
+  grid-template-areas: "item1 item2 item3";
+  gap: 4px;
+}
+.child-form-second img {
+  margin-top: 3vh;
+  width: 4vh;
+  border-radius: 50%;
+}
+.child-form-second .space {
+  display: flex;
+  gap: 1vh;
+}
+.space p {
+  margin-top: 4vh;
+  color: white;
+  font-size: 2vh;
 }
 
 // Banner text
