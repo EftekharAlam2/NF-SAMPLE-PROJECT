@@ -361,37 +361,91 @@ $primary-color: rgb(224, 134, 81);
 .section-1 {
   background-color: rgb(39, 48, 54);
   padding-top: 1px;
-}
-.section-1 .section-one {
-  margin: 2vh 40vh;
-}
-.section-one .section-one-part1 {
-  display: flex;
-  justify-content: space-between;
-}
-.section-one-part1 p {
-  color: white;
-  font-size: 3vh;
-}
-.section-one-part1 button {
-  color: white;
-  font-size: 1.5vh;
-  background-color: rgb(39, 48, 54);
-  border: 1px solid;
-  padding: 1.3vh;
-  border-radius: 1vh;
-  margin-top: -1.5vh;
-}
+  padding-bottom: 1px;
 
-.section-one .section-one-part2 {
-  margin-top: 6vh;
-}
+  .section-one {
+    margin: 2vh 40vh;
 
-.section-one-part2 .card {
-  width: 35vh;
-}
-.card img {
-  width: 35vh;
+    .section-one-part1 {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        color: white;
+        font-size: 3vh;
+      }
+
+      button {
+        color: white;
+        font-size: 1.5vh;
+        background-color: rgb(39, 48, 54);
+        border: 1px solid;
+        padding: 1.3vh;
+        border-radius: 1vh;
+        margin-top: -1.5vh;
+      }
+    }
+
+    .section-one-part2 {
+      margin-top: 6vh;
+      display: flex;
+      justify-content: space-between;
+
+      .card {
+        width: 35vh;
+
+        img {
+          width: 35vh;
+          border-radius: 8px;
+        }
+      }
+
+      .section-primary-btn {
+        width: 5vh;
+        background-color: $primary-color;
+        color: white;
+        font-size: 1.5vh;
+        padding: 1vh 1px 1vh 1vh;
+        border-radius: 1px;
+        position: relative;
+        margin-top: -4vh;
+
+        &:before {
+          border-radius: 4px;
+          position: absolute;
+          content: "";
+          width: 2vh;
+          height: 100%;
+          top: 0;
+          right: -5px;
+          background-color: $primary-color;
+          transform: skewX(13deg);
+        }
+      }
+
+      .text {
+        display: flex;
+        margin-top: 1.2vh;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+
+        .text-extra {
+          display: flex;
+          gap: 8px;
+
+          button {
+            color: rgb(112, 107, 107);
+            background-color: rgb(39, 48, 54);
+            border: 1px solid;
+            font-size: 1vh;
+            padding: 2px;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 912px) {
